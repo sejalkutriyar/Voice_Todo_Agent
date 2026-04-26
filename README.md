@@ -84,25 +84,9 @@ Voice_Todo_Agent/
 
 ## 🎥 Demonstration
 
-As per the assignment requirements, a comprehensive 6–10 minute demonstration video showcasing:
+A comprehensive demonstration video showcasing:
 1. Live voice interaction.
 2. Full Tool Usage (Adding, updating, listing, and deleting To-Dos).
 3. Memory implementation (Saving a memory and recalling it later).
 
 🔗 **[Google Drive Video Demo Link]** *(Add your link here before submission)*
-
----
-
-## 📊 Evaluation Criteria Alignment
-
-| Criteria | Weight | Implementation Details |
-| :--- | :--- | :--- |
-| **Voice interaction** | 20% | Implemented using native browser Web Speech APIs (`src/voice/`). |
-| **Tool usage (CRUD)** | 25% | Full JSON schema tool-calling implementation via Groq API. |
-| **Memory implementation** | 20% | Dedicated `save_memory` and `recall_memory` functions injected into the prompt. |
-| **Prompt quality** | 15% | High-quality persona setup with strict formatting rules in `systemPrompt.js`. |
-| **Code structure** | 10% | Clean, modular ES6 architecture separating UI, tools, and agent logic. |
-| **Demo clarity** | 10% | Addressed via the attached demo video link. |
-
----
-*Developed as part of the Voice-Based AI Agent Assignment.*

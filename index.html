@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voice Todo Agent 🎙️</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+
+  <h1>🎙️ Voice Todo Agent</h1>
+
+  <div id="app">
+
+    <!-- Chat Display -->
+    <div id="chat-display">
+      <div class="msg agent">
+        Hello! I'm Voya, your Todo assistant. Press the mic and speak! 🎤
+      </div>
+    </div>
+
+    <!-- Status -->
+    <div id="status">Press the mic to speak...</div>
+
+    <!-- Mic Button -->
+    <button id="mic-btn" title="Click to speak">🎤</button>
+
+    <!-- Text Input (fallback) -->
+    <div id="text-input-area">
+      <input 
+        type="text" 
+        id="text-input" 
+        placeholder="Type here..." 
+      />
+      <button id="send-btn">Send</button>
+    </div>
+
+    <!-- Todo List -->
+    <div id="todo-section">
+      <h2>📋 Your To-Do List</h2>
+      <ul id="todo-list">
+        <li style="color:#64748b">No tasks yet...</li>
+      </ul>
+    </div>
+
+    <!-- Memory Panel -->
+    <div id="memory-section">
+      <h2>🧠 Memory</h2>
+      <ul id="memory-list">
+        <li>No memory saved yet...</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Scripts - order important hai! -->
+  <script src="config.js"></script>
+  <script src="src/storage/todoStore.js"></script>
+  <script src="src/memory/memoryStore.js"></script>
+  <script src="src/memory/memoryManager.js"></script>
+  <script src="src/tools/todoTools.js"></script>
+  <script src="src/tools/memoryTools.js"></script>
+  <script src="src/agent/systemPrompt.js"></script>
+  <script src="src/agent/toolHandler.js"></script>
+  <script src="src/agent/agentCore.js"></script>
+  <script src="src/voice/speechToText.js"></script>
+  <script src="src/voice/textToSpeech.js"></script>
+  <script src="src/components/StatusBar.js"></script>
+  <script src="src/components/ChatDisplay.js"></script>
+  <script src="src/components/TodoList.js"></script>
+  <script src="src/components/VoiceInterface.js"></script>
+  <script src="src/components/app.js"></script>
+
+</body>
+</html>

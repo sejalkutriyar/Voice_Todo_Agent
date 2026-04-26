@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #7c3aed;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+#app {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Chat Area */
+#chat-display {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 16px;
+  height: 260px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.msg {
+  padding: 10px 14px;
+  border-radius: 10px;
+  max-width: 85%;
+  font-size: 0.95rem;
+}
+
+.msg.user {
+  background: #7c3aed;
+  align-self: flex-end;
+}
+
+.msg.agent {
+  background: #334155;
+  align-self: flex-start;
+}
+
+/* Status */
+#status {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  min-height: 24px;
+}
+
+/* Mic Button */
+#mic-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  background: #7c3aed;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  align-self: center;
+  transition: all 0.2s;
+  box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.5);
+}
+
+#mic-btn.listening {
+  background: #dc2626;
+  animation: pulse 1s infinite;
+}
+
+#mic-btn:hover {
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.5); }
+  70% { box-shadow: 0 0 0 16px rgba(220, 38, 38, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+}
+
+/* Todo List */
+#todo-section {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+#todo-section h2 {
+  color: #a78bfa;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+#todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#todo-list li {
+  background: #0f172a;
+  padding: 10px 14px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+#todo-list li.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.todo-id {
+  color: #64748b;
+  font-size: 0.75rem;
+  margin-right: 8px;
+}
+
+/* Memory Panel */
+#memory-section {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+#memory-section h2 {
+  color: #a78bfa;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+#memory-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+#memory-list li {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  border-left: 2px solid #7c3aed;
+  padding-left: 10px;
+}
+
+/* Text Input */
+#text-input-area {
+  display: flex;
+  gap: 8px;
+}
+
+#text-input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+}
+
+#send-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #7c3aed;
+  color: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+#send-btn:hover {
+  background: #6d28d9;
+}

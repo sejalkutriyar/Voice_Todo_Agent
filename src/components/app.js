@@ -19,7 +19,7 @@ function renderMemory() {
   const list = document.getElementById("memory-list");
   const mems = MemoryStore.getRecent(5);
   if (mems.length === 0) {
-    list.innerHTML = "<li>Koi memory save nahi abhi...</li>";
+    list.innerHTML = "<li>No memory saved yet...</li>";
     return;
   }
   list.innerHTML = mems

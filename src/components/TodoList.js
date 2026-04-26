@@ -10,7 +10,7 @@ const TodoList = {
     const todos = TodoStore.getAll();
     if (todos.length === 0) {
       this.container.innerHTML =
-        '<li style="color:#64748b">Koi task nahi abhi...</li>';
+        '<li style="color:#64748b">No tasks yet...</li>';
       return;
     }
     this.container.innerHTML = todos

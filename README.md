@@ -88,5 +88,3 @@ A comprehensive demonstration video showcasing:
 1. Live voice interaction.
 2. Full Tool Usage (Adding, updating, listing, and deleting To-Dos).
 3. Memory implementation (Saving a memory and recalling it later).
-
-🔗 **[Google Drive Video Demo Link]** *(Add your link here before submission)*
